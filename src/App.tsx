@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import RegisterMasjid from "./pages/RegisterMasjid";
 import MasjidDetails from "./pages/MasjidDetails";
 import Home from "./components/Home";
+import DonationType from "./components/DonationType"; // Import DonationType
 import AdminDashboard from "./pages/AdminDashboard";
 
 import Footer from "./components/Footer";
@@ -51,6 +52,7 @@ function App() {
             <Route path="/register-masjid" element={<RegisterMasjid />} />
             <Route path="/home" element={<Home />} />
             <Route path="/masjid/:slug" element={<MasjidDetails />} />
+            <Route path="/donate" element={<DonationType />} />
             <Route path="/admin" element={<AdminDashboard />} />
             <Route 
          

@@ -7,6 +7,7 @@
   "version": "0.0.0",
   
   "type": "module",
+  "homepage": "https://AlameenYahya.github.io/paysadaqa/",
   
   "scripts": {
   
@@ -23,7 +24,7 @@
   "preview": "vite preview",
   
     
-  "homepage": "https://AlameenYahya.github.io/paysadaqa/",
+
   
     
   "predeploy": "npm run build",

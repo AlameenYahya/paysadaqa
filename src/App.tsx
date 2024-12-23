@@ -19,7 +19,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     
-    <Router basename="/paysadaqa>">
+    <Router basename="/paysadaqa">
       <div className="flex">
         {/* Sidebar */}
        
@@ -48,7 +48,7 @@ function App() {
               }
             />
             
-            <Route path="/donate" element={<DonationType />} />
+            
             <Route path="/about" element={<About />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register-masjid" element={<RegisterMasjid />} />
@@ -57,9 +57,7 @@ function App() {
             <Route path="/donate" element={<DonationType />} />
             
             <Route path="/admin" element={<AdminDashboard />} />
-            <Route 
-         
-        />
+            <Route path="*" element={<div>404 - Page Not Found</div>} />
           </Routes>
           <Footer />
         </div>

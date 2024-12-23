@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Features from "./components/Features";
-import Donate from "./pages/Donate";
+
 import Login from "./pages/Login";
 import RegisterMasjid from "./pages/RegisterMasjid";
 import MasjidDetails from "./pages/MasjidDetails";
@@ -18,7 +18,8 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Router>
+    
+    <Router basename="/paysadaqa>">
       <div className="flex">
         {/* Sidebar */}
        
@@ -34,6 +35,7 @@ function App() {
           Donate Now
         </a>
       </div>
+      
           <Routes>
             <Route
               path="/"
@@ -46,13 +48,14 @@ function App() {
               }
             />
             
-            <Route path="/donate" element={<Donate />} />
+            <Route path="/donate" element={<DonationType />} />
             <Route path="/about" element={<About />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register-masjid" element={<RegisterMasjid />} />
             <Route path="/home" element={<Home />} />
             <Route path="/masjid/:slug" element={<MasjidDetails />} />
             <Route path="/donate" element={<DonationType />} />
+            
             <Route path="/admin" element={<AdminDashboard />} />
             <Route 
          
@@ -61,6 +64,8 @@ function App() {
           <Footer />
         </div>
       </div>
+      
+      
     </Router>
   );
 }
